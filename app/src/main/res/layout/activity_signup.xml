@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7ffdd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#f7ffdd" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:padding="10dp"
+            android:src="@drawable/gotitlogo" />
+
+        <TextView
+            android:id="@+id/createaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginRight="163dp"
+            android:text="create account"
+            android:textColor="#707070"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7ffdd"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edDOB"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="DOB"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/edAddress"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edDriverLicenceNumber"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Driver's Licence Number"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edConfirmPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="15dp"
+            android:background="#b1cf5f"
+            android:onClick="signup"
+            android:text="Signup"
+            android:textColor="#707070"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Create Account" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
