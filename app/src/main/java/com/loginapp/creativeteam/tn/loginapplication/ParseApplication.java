@@ -1,9 +1,6 @@
 package com.loginapp.creativeteam.tn.loginapplication;
-
 import android.app.Application;
-
 import com.parse.Parse;
-
 public class ParseApplication extends Application {
     @Override
     public void onCreate(){

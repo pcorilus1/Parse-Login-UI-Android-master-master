@@ -4,72 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f7ffdd"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:background="@color/colorPrimary"/>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:padding="10dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="155dp"
-            android:background="@drawable/image_background"
-            android:src="@drawable/avatar" />
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="30dp">
+        android:layout_height="107dp"
+        android:background="@drawable/searchbar">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Your are logged in as"
-            android:gravity="center"
-            android:textSize="17dp"
-            android:layout_marginBottom="10dp"/>
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--            android:layout_width="130dp"-->
+        <!--            android:layout_height="130dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="155dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:src="@drawable/gotitlogo" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Hello"-->
+        <!--            android:textSize="12dp" />-->
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvEmail"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:textSize="17dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"/>
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:layout_marginBottom="15dp"
-            android:text="Logout"
-            android:onClick="logout"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:width="15dp"
+        android:background="#b1cf5f"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textColor="#707070"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
     </LinearLayout>
 
 

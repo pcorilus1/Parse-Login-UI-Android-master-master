@@ -5,7 +5,9 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -16,6 +18,7 @@ import com.parse.ParseUser;
 public class LoginActivity extends AppCompatActivity {
 
     EditText edEmail, edPassword;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +27,28 @@ public class LoginActivity extends AppCompatActivity {
 
         edEmail = findViewById(R.id.edEmail);
         edPassword = findViewById(R.id.edPassword);
-
-        if(ParseUser.getCurrentUser()!=null){
+        btn = findViewById(R.id.button);
+        /*if(ParseUser.getCurrentUser()!=null){
             Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
             startActivity(intent);
             finish();
-        }
+        }*/
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String user = edEmail.getText().toString();
+                String pass = edPassword.getText().toString();
+
+                login(user,pass);
+            }
+        });
 
     }
 
-    public void login(View view) {
+
+
+    public void login2(View view) {
         if( TextUtils.isEmpty(edEmail.getText())){
             edEmail.setError( "Email is required!" );
         }else if( TextUtils.isEmpty(edPassword.getText())){
@@ -59,6 +74,27 @@ public class LoginActivity extends AppCompatActivity {
             });
         }
 
+    }
+
+    private void login( String user,final String password) {
+
+        ParseUser.logInInBackground(user, password, new LogInCallback() {
+            @Override
+            public void done(ParseUser user, ParseException e) {
+                if (e != null) {
+                    Log.e("ERROR", "Issue w Login");
+                    e.printStackTrace();
+                    return;
+                }
+                //TODO:navigate to new activity if the sign in succeeds
+                Log.d("WORKING", "It's working");
+                //goMainActivity();
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
     }
 
     public void signup(View view) {
