@@ -14,21 +14,21 @@
         android:background="@drawable/searchbar">
 
 
-        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
-        <!--            android:layout_width="130dp"-->
-        <!--            android:layout_height="130dp"-->
-        <!--            android:layout_centerHorizontal="true"-->
-        <!--            android:layout_marginTop="155dp"-->
-        <!--            android:padding="10dp"-->
-        <!--            android:src="@drawable/gotitlogo" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="155dp"
+                    android:padding="10dp"
+                    android:src="@drawable/gotitlogo" />
 
-        <!--        <TextView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginBottom="10dp"-->
-        <!--            android:gravity="center"-->
-        <!--            android:text="Hello"-->
-        <!--            android:textSize="12dp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Hello"
+                    android:textSize="12dp" />
 
         <TextView
             android:id="@+id/tvName"
